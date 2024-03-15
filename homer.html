@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/index.html">Home</a>
+      <a href="/homer.html">Homer</a>
+      <a href="/logotip.html">Logotip</a>
+      <a href="/plujaEstels.html">plujaEstels</a>
+      <a href="/postaDeSol.html">postaDeSol</a>
+      <a href="/transparency.html">transparency</a>
+    </div>
+
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <p><b>Original image</b></p>
+        <img src="images/homer.gif" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <p><b>WebP</b></p>
+        <img src="images/homer.webp" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

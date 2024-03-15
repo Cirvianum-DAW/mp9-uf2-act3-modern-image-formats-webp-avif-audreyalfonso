@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/index.html">Home</a>
+      <a href="/homer.html">Homer</a>
+      <a href="/logotip.html">Logotip</a>
+      <a href="/plujaEstels.html">plujaEstels</a>
+      <a href="/postaDeSol.html">postaDeSol</a>
+      <a href="/transparency.html">transparency</a>
+    </div>
+
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="images/homer.gif" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/logotip.png" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/plujaEstels.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/postaDeSol.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/transparency.png" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <div class="container mx-auto">
+      <div class="overflow-x-auto mx-10 mb-5">
+        <table class="table-auto w-full">
+          <thead>
+            <tr>
+              <th class="border px-4 py-2">Image Name</th>
+              <th class="border px-4 py-2">Original size</th>
+              <th class="border px-4 py-2">WebP %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">homer.gif</td>
+              <td class="border px-4 py-2">107.12 KB</td>
+              <td class="border px-4 py-2">7.15 KB (93%)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">logotip.png</td>
+              <td class="border px-4 py-2">286.50 KB</td>
+              <td class="border px-4 py-2">52.79 KB (82%)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">plujaEstels.jpg</td>
+              <td class="border px-4 py-2">6394.76 KB</td>
+              <td class="border px-4 py-2">2375.58 KB (63%)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">postaDeSol.jpg</td>
+              <td class="border px-4 py-2">4965.77 KB</td>
+              <td class="border px-4 py-2">743.04 KB (85%)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">transparency.png</td>
+              <td class="border px-4 py-2">2478.56 KB</td>
+              <td class="border px-4 py-2">421.55 KB (83%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="p-10">
+      <div class="mb-6">
+        <p class="text-xl font-bold mb-2 text-blue-500">
+          What happens with GIF file? Can we use WebP to replace it?
+        </p>
+        <p class="text-gray-600">
+          When converting a GIF to WebP, the animation capability is 
+          lost as WebP does not support animations. Therefore, we cannot 
+          use WebP to replace animated GIF files.
+        </p>
+      </div>
+
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
